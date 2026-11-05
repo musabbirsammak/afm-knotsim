@@ -1,0 +1,11 @@
+# Worm-like-chain Monte Carlo. Values are placeholders: calibrate to the real plasmids.
+length_bp: 3000            # TODO: set from Holmes et al. 2025 methods
+bp_per_nm: 2.94            # B-DNA rise ~0.34 nm/bp
+bead_size_nm: 2.5          # segment length between beads
+persistence_length_nm: 50.0
+excluded_volume_nm: 2.5    # effective DNA diameter for self-avoidance
+mc_steps: 20000
+topology_check_every: 500  # recompute knot invariant; reject moves that change it
+moves:
+  crankshaft: 0.7
+  pivot: 0.3

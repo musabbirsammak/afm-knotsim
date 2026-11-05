@@ -1,0 +1,9 @@
+# Height-map rendering. Placeholders: match pixel and scan size to the Sheffield images.
+image_size_px: 512
+pixel_size_nm: 1.0          # TODO: set from real data
+dna_height_nm: 2.0
+dna_width_nm: 2.0
+crossing_height_factor: 2.0 # over-strand sits on top of under-strand
+tip:
+  shape: paraboloid         # paraboloid | sphere | cone
+  radius_nm: [2.0, 10.0]    # sampled uniformly per image

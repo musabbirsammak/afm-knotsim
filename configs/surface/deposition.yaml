@@ -1,0 +1,6 @@
+# How the 3D chain lands on mica.
+mode: kinetic_trapping   # kinetic_trapping | equilibration_2d
+equilibration_2d:
+  mc_steps: 10000
+  allow_strand_passage: false
+random_rotation: true

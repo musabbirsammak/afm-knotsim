@@ -1,0 +1,7 @@
+# AFM artefacts. Each is applied with probability `p`.
+gaussian_noise:   {p: 1.0, sigma_nm: [0.05, 0.3]}
+pink_noise:       {p: 0.5, amplitude_nm: [0.02, 0.15]}
+scanline_offset:  {p: 0.8, sigma_nm: [0.05, 0.4]}
+plane_tilt:       {p: 0.6, max_slope: 0.002}
+scars:            {p: 0.3, count: [1, 4]}
+debris:           {p: 0.4, count: [0, 20], height_nm: [0.5, 4.0]}

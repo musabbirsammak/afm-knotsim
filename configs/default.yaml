@@ -1,0 +1,20 @@
+# Top-level generation config. Sub-configs are merged in by knotsim.cli.
+seed: 0
+n_samples: 1000
+out_dir: data/synthetic
+
+# Topologies to sample and their relative weights.
+topologies:
+  "0_1": 1.0      # unknot
+  "3_1": 1.0      # trefoil
+  "4_1": 1.0      # figure-eight
+  "5_1": 0.5
+  "5_2": 0.5
+  "6_1": 0.5
+  "2^2_1": 1.0    # two-ring catenane (Hopf link)
+
+defaults:
+  chain: configs/chain/wlc.yaml
+  surface: configs/surface/deposition.yaml
+  render: configs/render/highres_afm.yaml
+  artifacts: configs/artifacts/realistic.yaml
